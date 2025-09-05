@@ -6,7 +6,7 @@ import { useBeep } from "./hooks/useBeep";
 import { saveResult, removeResult } from "./lib/storage";
 
 import Controls from "./components/Controls";
-import ScorePad from "./components/ScorePad";
+import ScorePad from "./components/ScorePad.jsx";
 import SummaryChips from "./components/SummaryChips";
 
 export default function App() {
