@@ -6,7 +6,7 @@ import { useBeep } from "./hooks/useBeep";
 import { saveResult, removeResult } from "./lib/storage";
 
 import Controls from "./components/Controls";
-import ScorePad from "./components/ScorePad.jsx";
+import Scorepad from "./components/Scorepad.jsx";
 import SummaryChips from "./components/SummaryChips";
 
 export default function App() {
@@ -91,13 +91,13 @@ export default function App() {
 
                 {canScore && (
                     <div className="scorePadWrap">
-                        <ScorePad
+                        <Scorepad
                             team={teams[0]} value={a}
                             onMinus={() => adjust("A", -1)} onPlus={() => adjust("A", +1)}
                             onPointerDown={() => onPadDown("A")} onPointerUp={() => onPadUp("A")}
                         />
                         <div className="divider">–</div>
-                        <ScorePad
+                        <Scorepad
                             team={teams[1]} value={b}
                             onMinus={() => adjust("B", -1)} onPlus={() => adjust("B", +1)}
                             onPointerDown={() => onPadDown("B")} onPointerUp={() => onPadUp("B")}
